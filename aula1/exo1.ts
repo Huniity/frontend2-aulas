@@ -50,6 +50,6 @@ const meuPagamento: Pagamento = {
 }
 
 function processarPagamento(pagamento: Pagamento):string {
-    return pagamento.valor + " " + pagamento.metodo + "( " + pagamento.detalhes + " )"
+    return pagamento.valor + " " + pagamento.metodo + " ( " + pagamento.detalhes + " )"
 }
 const pagamentoInfo: string = processarPagamento(meuPagamento)
