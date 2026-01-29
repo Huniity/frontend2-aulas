@@ -37,16 +37,17 @@ interface Pagamento {
     detalhes: string;
 }
 
-const meuPagamento: Pagamento = {
-    valor: 50,
-    metodo: "mbway",
-    detalhes: "pagamento urgente"
-}
 
 //
 // Criar uma função
 // processarPagamento(pagamento:Pagamento):string
 //
+
+const meuPagamento: Pagamento = {
+    valor: 50,
+    metodo: "mbway",
+    detalhes: "pagamento urgente"
+}
 
 function processarPagamento(pagamento: Pagamento):string {
     return pagamento.valor + " " + pagamento.metodo + "( " + pagamento.detalhes + " )"
