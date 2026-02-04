@@ -1,8 +1,10 @@
+import type React from "react"
+
 const cardImage = {
-    width: '100%',
+    width: '270px',
     height: 'auto',
-    borderRadius: '10px',
-    padding: "0",
+    borderRadius: '24px',
+    padding: "12px",
     margin: "0"
 }
 
@@ -14,40 +16,48 @@ const cardTitle = {
 
 const cardDescription = {
     fontSize: '16px',
-    color: 'darkgray'
+    color: 'darkgray',
+    padding: '0',
+    margin: '0'
 }
 
-const buttonStyle = {
-    backgroundImage: "linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%)",
-    border: "none",
-    borderRadius: "6px",
-    color: "white",
-    borderWidth: "1px",
-    borderColor: "black",
+const cardAltDescription = {
+    fontSize: '16px',
+    color: 'darkgray',
+    padding: '0',
+    margin: '0'
 }
 
 const cardContainer = {
     padding: "6px",
     backgroundColor: "white",
-    borderRadius: "10px",
-    justifyContent: "center",
+    borderRadius: "12px",
+    display: "flex",
+    flexDirection: "column" as const,
     alignItems: "center",
-    textAlign: "center",
-    width: "450px",
-    height: "auto",
+    justifyContent: "space-between",
+    width: "300px",
+    height: "425px",
+    margin: "24px"
 }
 
-const showMessage = () => {
-    alert("Well done you clicked the button!");
+const contentWrapper = {
+    display: "flex",
+    flexDirection: "column" as const,
+    alignItems: "center",
+    flexGrow: 1
 }
 
-const Card = ({title, description, profilePic} : {title: string, description: string, profilePic: string}) => {
+const Card = ({title, description, altDescription, profilePic, children} : {title: string, description: string | React.ReactNode, altDescription?: string, profilePic: string, children?: React.ReactNode}) => {
     return (
         <div style={cardContainer}>
-            <img style={cardImage} src={profilePic} alt={title} />
-            <h2 style={cardTitle}>{title}</h2>
-            <p style={cardDescription}>{description}</p>
-            <button style={buttonStyle}onClick={showMessage}>Click Me!</button>
+            <div style={contentWrapper}>
+                <img style={cardImage} src={profilePic} alt={title} />
+                <h2 style={cardTitle}>{title}</h2>
+                <p style={cardDescription}>{description}</p>
+                <p style={cardAltDescription}>{altDescription}</p>
+            </div>
+            {children}
         </div>
     )
 }
