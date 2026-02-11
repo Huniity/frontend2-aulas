@@ -1,0 +1,25 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Getting Started with Next.js",
+      "content": "Learn how to build amazing web applications with Next.js. Next.js is a React framework that makes it easy to build static and dynamic websites.",
+      "author": "John Doe",
+      "date": "2024-01-15"
+    },
+    {
+      "id": 2,
+      "title": "React Hooks Explained",
+      "content": "Hooks allow you to use state and other React features without writing a class. They make your JavaScript code more reusable and easier to understand.",
+      "author": "Jane Smith",
+      "date": "2024-01-20"
+    },
+    {
+      "id": 3,
+      "title": "Tailwind CSS Tips and Tricks",
+      "content": "Tailwind CSS is a utility-first CSS framework. In this post, we'll explore various tips and tricks to maximize your productivity with Tailwind.",
+      "author": "Bob Johnson",
+      "date": "2024-01-25"
+    }
+  ]
+}
