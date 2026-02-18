@@ -2,6 +2,9 @@ import Navbar from "@/components/layout/Navbar";
 import Contador from "@/components/Counter";
 import Card from "@/components/Card";
 import Button from "@/components/Button";
+import MyComponent from "@/components/Mount";
+import Exemplo from "@/components/Memo";
+import InputFocus from "@/components/Ref";
 
 export default function Home() {
   return (
@@ -25,6 +28,23 @@ export default function Home() {
         profilePic="https://t4.ftcdn.net/jpg/02/72/31/41/360_F_272314124_oVQMMZWHwOPYsmCASwjRcFuZhSa4jqzO.jpg"
       >
         <Contador/>
+      </Card>
+      <Card title="Component" description="Mounted or Unmounted" profilePic="https://t4.ftcdn.net/jpg/02/72/31/41/360_F_272314124_oVQMMZWHwOPYsmCASwjRcFuZhSa4jqzO.jpg">
+        <MyComponent/>
+      </Card>
+      <Card
+        title="Exercise: Make a Memo Component"
+        description="Interactive memo component"
+        altDescription="Tic-Tac!"
+        profilePic="https://t4.ftcdn.net/jpg/02/72/31/41/360_F_272314124_oVQMMZWHwOPYsmCASwjRcFuZhSa4jqzO.jpg"
+      >
+        <Exemplo/>
+      </Card>
+      <Card 
+        title="Exercise: Make a Ref Component" 
+        description="Interactive ref component" 
+        profilePic="https://t4.ftcdn.net/jpg/02/72/31/41/360_F_272314124_oVQMMZWHwOPYsmCASwjRcFuZhSa4jqzO.jpg">
+        <InputFocus/>
       </Card>
         </main>
       </div>

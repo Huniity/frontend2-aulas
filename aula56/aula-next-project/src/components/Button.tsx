@@ -7,7 +7,7 @@ interface ButtonProps {
 const Button = ({ name, onClick, className = "" }: ButtonProps) => {
     return (
         <button 
-            className={`border border-black rounded-md text-white m-3 w-[270px] h-[50px] ${className}`}
+            className={`bg-black border border-black rounded-md text-white m-3 w-[270px] h-[50px] ${className}`}
             onClick={onClick}
         > 
             {name} 
