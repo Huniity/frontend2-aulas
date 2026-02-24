@@ -1,5 +1,5 @@
 import Navbar from '@/components/layout/Navbar';
-import Button from '@/components/Button';
+import { Button } from '@/components/Button';
 import Card from '@/components/Card';
 import Counter from '@/components/Counter';
 

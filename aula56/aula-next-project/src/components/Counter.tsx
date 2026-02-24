@@ -1,7 +1,7 @@
 'use client';
 
 import {useState, useEffect} from 'react';
-import Button from './Button';
+import { Button } from './Button';
 
 const Contador = () => {
     const [contador, setContador] = useState(0);
