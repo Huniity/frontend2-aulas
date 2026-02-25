@@ -13,6 +13,7 @@ const Navbar = () => {
                 <Link href="/about" className='text-black no-underline hover:underline'>About</Link>
                 <Link href="/blog" className='text-black no-underline hover:underline'>Blog</Link>
                 <Link href="/search" className='text-black no-underline hover:underline'>Search</Link>
+                <Link href="/product" className='text-black no-underline hover:underline'>Products</Link>
             </nav>
         </div>
     )
